@@ -1,0 +1,150 @@
+10:19:48.563 -> _PowerOn : 91798
+10:19:51.186 -> _Update_Full : 2587887
+10:19:51.419 -> _PowerOff : 232939
+10:20:16.100 -> dhcps: send_offer>>udp_sendto result 0
+10:20:37.788 -> Save config to memory.
+10:20:37.788 -> [WifiCredentials] ssid: home_network, pass: 10203040
+10:20:37.788 -> Locations: 2
+10:20:37.788 -> [Location] name: Paris, (lat, lon): (0.00, 0.00)
+10:20:37.788 -> [Location] name: Berlin, (lat, lon): (0.00, 0.00)
+10:20:37.821 -> ets Jun  8 2016 00:22:57
+10:20:37.821 -> 
+10:20:37.821 -> rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:20:37.821 -> configsip: 0, SPIWP:0xee
+10:20:37.821 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:20:37.821 -> mode:DIO, clock div:1
+10:20:37.821 -> load:0x3fff0018,len:4
+10:20:37.821 -> load:0x3fff001c,len:1216
+10:20:37.821 -> ho 0 tail 12 room 4
+10:20:37.821 -> load:0x40078000,len:9720
+10:20:37.821 -> ho 0 tail 12 room 4
+10:20:37.821 -> load:0x40080400,len:6352
+10:20:37.821 -> entry 0x400806b8
+10:20:38.152 -> 
+10:20:38.152 -> 
+10:20:38.152 ->                                                                                   completed
+10:20:38.583 -> MODE: Validating
+10:20:38.583 -> Read config from memory...
+10:20:38.583 -> [WifiCredentials] ssid: home_network, pass: 10203040
+10:20:38.583 -> Locations: 2
+10:20:38.583 -> [Location] name: Paris, (lat, lon): (0.00, 0.00)
+10:20:38.583 -> [Location] name: Berlin, (lat, lon): (0.00, 0.00)
+10:20:38.583 -> _InitDisplay : 3
+10:20:38.583 -> _InitDisplay : 2571
+10:20:38.583 -> _InitDisplay : 1
+10:20:38.682 -> _PowerOn : 91798
+10:20:41.298 -> _Update_Full : 2587926
+10:20:41.530 -> _PowerOff : 232939
+10:20:41.629 -> 
+10:20:41.629 -> Connecting to: home_network [retry left: 4]
+10:20:41.828 -> Wifi connected. IP: 192.168.1.179
+10:20:41.828 -> 
+10:20:41.828 -> HTTP connecting to api.positionstack.com/v1/forward?access_key=**********&query=Paris [retry left: 2]
+10:20:42.490 -> HTTP connection established
+10:20:42.490 -> 
+10:20:42.490 -> Deserializing json, size:20480 bytes...
+10:20:47.523 -> Embeded json algorithm obtained document...
+10:20:47.523 -> {"data":[{"latitude":48.858705,"longitude":2.342865,"type":"locality","name":"Paris","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Paris","region_code":"VP","county":null,"locality":"Paris","administrative_area":"Paris","neighbourhood":null,"country":"France","country_code":"FRA","continent":"Europe","label":"Paris, France"},{"latitude":33.659317,"longitude":-95.561576,"type":"locality","name":"Paris","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Texas","region_code":"TX","county":"Lamar County","locality":"Paris","administrative_area":null,"neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Paris, TX, USA"},{"latitude":43.2,"longitude":-80.38333,"type":"locality","name":"Paris","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Ontario","region_code":"ON","county":"Brant","locality":"Paris","administrative_area":null,"neighbourhood":null,"country":"Canada","country_code":"CAN","continent":"North America","label":"Paris, ON, Canada"},{"latitude":36.292232,"longitude":-88.303134,"type":"locality","name":"Paris","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Tennessee","region_code":"TN","county":"Henry County","locality":"Paris","administrative_area":null,"neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Paris, TN, USA"},{"latitude":32.595866,"longitude":-82.337946,"type":"locality","name":"Swainsboro","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Georgia","region_code":"GA","county":"Emanuel County","locality":"Swainsboro","administrative_area":null,"neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Swainsboro, GA, USA"},{"latitude":40.244349,"longitude":-83.375382,"type":"localadmin","name":"Paris Township","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Ohio","region_code":"OH","county":"Union County","locality":null,"administrative_area":"Paris Township","neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Paris Township, OH, USA"},{"latitude":39.632458,"longitude":-87.708895,"type":"localadmin","name":"Paris Township","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Illinois","region_code":"IL","county":"Edgar County","locality":null,"administrative_area":"Paris Township","neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Paris Township, IL, USA"},{"latitude":40.771368,"longitude":-81.141398,"type":"localadmin","name":"Paris Township","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Ohio","region_code":"OH","county":"Stark County","locality":null,"administrative_area":"Paris Township","neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Paris Township, OH, USA"},{"latitude":44.246666,"longitude":-70.487196,"type":"localadmin","name":"Paris","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Maine","region_code":"ME","county":"Oxford County","locality":null,"administrative_area":"Paris","neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Paris, ME, USA"},{"latitude":42.2386,"longitude":-91.57906,"type":"locality","name":"Paris","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Iowa","region_code":"IA","county":"Linn County","locality":"Paris","administrative_area":null,"neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Paris, IA, USA"}]}
+10:20:47.854 -> deserialized.
+10:20:47.854 -> 
+10:20:47.854 -> Geocoding...
+10:20:47.854 -> City: (48.86, 2.34) Paris, France
+10:20:47.854 -> 
+10:20:47.854 -> 
+10:20:47.854 -> HTTP connecting to api.positionstack.com/v1/forward?access_key=**********&query=Berlin [retry left: 2]
+10:20:48.450 -> HTTP connection established
+10:20:48.450 -> 
+10:20:48.450 -> Deserializing json, size:20480 bytes...
+10:20:53.516 -> Embeded json algorithm obtained document...
+10:20:53.516 -> {"data":[{"latitude":52.524932,"longitude":13.407032,"type":"locality","name":"Berlin","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Berlin","region_code":"BE","county":null,"locality":"Berlin","administrative_area":"Berlin","neighbourhood":null,"country":"Germany","country_code":"DEU","continent":"Europe","label":"Berlin, Germany"},{"latitude":13.5,"longitude":-88.53333,"type":"locality","name":"Berl\u00edn","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Usulut\u00e1n","region_code":"US","county":"Berlin","locality":"Berl\u00edn","administrative_area":null,"neighbourhood":null,"country":"El Salvador","country_code":"SLV","continent":"North America","label":"Berl\u00edn, US, El Salvador"},{"latitude":44.487209,"longitude":-71.260186,"type":"locality","name":"Berlin","number":null,"postal_code":null,"street":null,"confidence":1,"region":"New Hampshire","region_code":"NH","county":"Coos County","locality":"Berlin","administrative_area":"Berlin","neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Berlin, NH, USA"},{"latitude":39.789902,"longitude":-74.937758,"type":"locality","name":"Berlin","number":null,"postal_code":null,"street":null,"confidence":1,"region":"New Jersey","region_code":"NJ","county":"Camden County","locality":"Berlin","administrative_area":"Berlin","neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Berlin, NJ, USA"},{"latitude":39.316236,"longitude":-77.625644,"type":"locality","name":"Brunswick","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Maryland","region_code":"MD","county":"Frederick County","locality":"Brunswick","administrative_area":null,"neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Brunswick, MD, USA"},{"latitude":43.968582,"longitude":-88.952344,"type":"locality","name":"Berlin","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Wisconsin","region_code":"WI","county":"Green Lake County","locality":"Berlin","administrative_area":"Berlin","neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Berlin, WI, USA"},{"latitude":41.62149,"longitude":-72.74565,"type":"locality","name":"Berlin","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Connecticut","region_code":"CT","county":"Hartford County","locality":"Berlin","administrative_area":"Berlin","neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Berlin, CT, USA"},{"latitude":42.022502,"longitude":-83.260601,"type":"localadmin","name":"Berlin","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Michigan","region_code":"MI","county":"Monroe County","locality":null,"administrative_area":"Berlin","neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Berlin, MI, USA"},{"latitude":40.249214,"longitude":-82.980818,"type":"localadmin","name":"Berlin Township","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Ohio","region_code":"OH","county":"Delaware County","locality":null,"administrative_area":"Berlin Township","neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Berlin Township, OH, USA"},{"latitude":39.810774,"longitude":-74.929574,"type":"localadmin","name":"Berlin Township","number":null,"postal_code":null,"street":null,"confidence":1,"region":"New Jersey","region_code":"NJ","county":"Camden County","locality":null,"administrative_area":"Berlin Township","neighbourhood":null,"country":"United States","country_code":"USA","continent":"North America","label":"Berlin Township, NJ, USA"}]}
+10:20:53.847 -> deserialized.
+10:20:53.847 -> 
+10:20:53.847 -> Geocoding...
+10:20:53.847 -> City: (52.52, 13.41) Berlin, Germany
+10:20:53.847 -> 
+10:20:53.847 -> Save config to memory.
+10:20:53.847 -> [WifiCredentials] ssid: home_network, pass: 10203040
+10:20:53.847 -> Locations: 2
+10:20:53.847 -> [Location] name: Paris, (lat, lon): (48.86, 2.34)
+10:20:53.847 -> [Location] name: Berlin, (lat, lon): (52.52, 13.41)
+10:20:53.880 -> ets Jun  8 2016 00:22:57
+10:20:53.880 -> 
+10:20:53.880 -> rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:20:53.880 -> configsip: 0, SPIWP:0xee
+10:20:53.880 -> clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:20:53.880 -> mode:DIO, clock div:1
+10:20:53.880 -> load:0x3fff0018,len:4
+10:20:53.880 -> load:0x3fff001c,len:1216
+10:20:53.880 -> ho 0 tail 12 room 4
+10:20:53.880 -> load:0x40078000,len:9720
+10:20:53.880 -> ho 0 tail 12 room 4
+10:20:53.880 -> load:0x40080400,len:6352
+10:20:53.880 -> entry 0x400806b8
+10:20:54.178 -> 
+10:20:54.178 -> 
+10:20:54.178 ->                                                                                   completed
+10:20:54.642 -> MODE: Operating
+10:20:54.642 -> Read config from memory...
+10:20:54.642 -> [WifiCredentials] ssid: home_network, pass: 10203040
+10:20:54.642 -> Locations: 2
+10:20:54.642 -> [Location] name: Paris, (lat, lon): (48.86, 2.34)
+10:20:54.642 -> [Location] name: Berlin, (lat, lon): (52.52, 13.41)
+10:20:54.642 -> Read current location from memory...
+10:20:54.642 -> Wakeup not caused by deep sleep: 0
+10:20:54.642 -> CPU0 reset reason: SW_CPU_RESET,  CPU1 reset reason: SW_CPU_RESET
+10:20:54.741 -> 
+10:20:54.741 -> Connecting to: home_network [retry left: 4]
+10:20:55.072 -> Wifi connected. IP: 192.168.1.179
+10:20:55.072 -> 
+10:20:55.072 -> HTTP connecting to api.timezonedb.com/v2.1/get-time-zone?key=**********&format=json&by=position&lat=48.86&lng=2.34 [retry left: 2]
+10:20:55.635 -> HTTP connection established
+10:20:55.635 -> 
+10:20:55.635 -> Deserializing json, size:10240 bytes...
+10:21:00.635 -> Embeded json algorithm obtained document...
+10:21:00.635 -> {"status":"OK","message":"","countryCode":"FR","countryName":"France","zoneName":"Europe\/Paris","abbreviation":"CEST","gmtOffset":7200,"dst":"1","zoneStart":1616893200,"zoneEnd":1635642000,"nextAbbreviation":"CET","timestamp":1620555655,"formatted":"2021-05-09 10:20:55"}
+10:21:00.668 -> deserialized.
+10:21:00.668 -> 
+10:21:00.668 -> Date and time:  10:20 0, 9-5-2021 
+10:21:00.668 -> 
+10:21:00.668 -> HTTP connecting to api.openweathermap.org/data/2.5/onecall?lat=48.86&lon=2.34&exclude=minutely,alerts&appid=***********&lang=pl [retry left: 2]
+10:21:00.900 -> HTTP connection established
+10:21:00.900 -> 
+10:21:00.900 -> Deserializing json, size:35840 bytes...deserialized.
+10:21:01.065 -> 
+10:21:01.065 -> Weather currently: pochmurno z przejaśnieniami
+10:21:01.065 ->  date_ts  sunr_ts  suns_ts     temp   feel_t    max_t    min_t pressure   clouds wind_bft wind_deg     icon     snow     rain      pop
+10:21:01.065 ->    08:21    04:17    19:16       19       18       26       14     1002       75        3      180       04      0.0      0.0       16
+10:21:01.098 -> Forecast: 10/05   max_t    min_t wind_bft wind_deg      pop     snow     rain
+10:21:01.098 ->                      19       12        4      225      100       no      yes
+10:21:01.098 -> Forecast: 11/05   max_t    min_t wind_bft wind_deg      pop     snow     rain
+10:21:01.098 ->                      16       10        4      283      100       no      yes
+10:21:01.098 -> Rain: 09:00 09/05/21     pop     snow     rain     icon
+10:21:01.098 ->                           16      0.0      0.0       04
+10:21:01.131 -> Rain: 10:00 09/05/21     pop     snow     rain     icon
+10:21:01.131 ->                           13      0.0      0.0       04
+10:21:01.131 -> Rain: 11:00 09/05/21     pop     snow     rain     icon
+10:21:01.131 ->                           10      0.0      0.0       04
+10:21:01.131 -> Rain: 12:00 09/05/21     pop     snow     rain     icon
+10:21:01.165 ->                            6      0.0      0.0       04
+10:21:01.165 -> Rain: 13:00 09/05/21     pop     snow     rain     icon
+10:21:01.165 ->                            0      0.0      0.0       03
+10:21:01.165 -> 
+10:21:01.165 -> HTTP connecting to api.waqi.info/feed/geo:48.86;2.34/?token=********* [retry left: 2]
+10:21:01.827 -> HTTP connection established
+10:21:01.827 -> 
+10:21:01.827 -> Deserializing json, size:6144 bytes...deserialized.
+10:21:01.827 -> 
+10:21:01.827 -> Air quality (PM2.5): 25
+10:21:01.827 -> 
+10:21:01.827 -> Battery voltage ~4.23V
+10:21:01.827 -> 
+10:21:01.827 -> Update display.
+10:21:01.827 -> WindArrow rotate by 180 deg (3.14 rad)
+10:21:01.827 -> _InitDisplay : 3
+10:21:01.827 -> _InitDisplay : 2500
+10:21:01.827 -> _InitDisplay : 1
+10:21:01.926 -> _PowerOn : 91798
+10:21:04.542 -> _Update_Full : 2586910
+10:21:04.774 -> _PowerOff : 232939
+10:21:04.873 -> 
+10:21:04.873 -> Wake up in 9 minutes and 5 seconds_PowerOff : 232886
