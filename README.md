@@ -22,7 +22,7 @@
 
 Turn on device. 
 Reset to enable configuration.
-Connect to `esp-weather` device access point.
+Connect to `weather-wifi` device access point.
 Provide wireless lan ssid and password.
 Provide locations for which information should be fetched.
 Submit config form.
