@@ -715,7 +715,7 @@ public:
 
 void run_config_server() {
     String network = "weather-wifi";
-    String pass = String(abs(esp_random())).substring(0, 4) + "0000";
+    String pass = String(abs((int)esp_random())).substring(0, 4) + "0000";
     WiFi.softAP(network.c_str(), pass.c_str());
     //WiFi.softAP(network.c_str());  // <- without password
     
