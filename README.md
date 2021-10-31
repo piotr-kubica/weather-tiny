@@ -2,6 +2,8 @@
 
 [<img src="/images/esp-weather-station.jpg" width="440"/>](/images/esp-weather-station.jpg) [<img src="/images/weather_mini.jpg" width="350"/>](/images/weather_mini.jpg) 
 
+### This project is licensed under GNU General Public License v2.0
+The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GNU GPL, each with different requirements.
 
 ### Features
 
@@ -22,7 +24,7 @@
 
 Turn on device. 
 Reset to enable configuration.
-Connect to `esp-weather` device access point.
+Connect to `weather-wifi` device access point.
 Provide wireless lan ssid and password.
 Provide locations for which information should be fetched.
 Submit config form.
