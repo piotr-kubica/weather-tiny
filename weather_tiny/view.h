@@ -40,9 +40,9 @@ struct View {
     String aq_pm25 = "---";
     String aq_pm25_unit = "PM2.5";
 
-    String percip_time_unit = "godz";
-    String percip_unit = "mm";
-    String percic_pop_unit = "%";
+    String percip_time_unit = "hour";
+    String percip_unit = "temp";
+    String percic_pop_unit = "mm/%";
 
     String percip_time[PERCIP_SIZE];
     String percip_icon[PERCIP_SIZE];

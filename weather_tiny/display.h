@@ -216,8 +216,8 @@ void display_weather(View& view) {
     
     // hourly rain forecast
     display.setFont(&Cousine_Regular6pt7b);
-    print_text(0, 82, view.percip_time_unit);
-    print_text(0, 102, view.percip_unit);
+    print_text(0, 83, view.percip_time_unit);
+    print_text(0, 98, view.percip_unit);
     print_text(0, 112, view.percic_pop_unit);
 
     print_text(50-7, 85, view.percip_time[0]);
@@ -239,11 +239,11 @@ void display_weather(View& view) {
     print_text(210+1, 112, view.percic_pop[4]);
 
     display.setFont(&meteocons_webfont10pt7b);
-    print_text(61, 82, view.percip_icon[0]);
-    print_text(103, 82, view.percip_icon[1]);
-    print_text(145, 82, view.percip_icon[2]);
-    print_text(187, 82, view.percip_icon[3]);
-    print_text(229, 82, view.percip_icon[4]);
+    print_text(61, 80, view.percip_icon[0]);
+    print_text(103, 80, view.percip_icon[1]);
+    print_text(145, 80, view.percip_icon[2]);
+    print_text(187, 80, view.percip_icon[3]);
+    print_text(229, 80, view.percip_icon[4]);
 }
 
 

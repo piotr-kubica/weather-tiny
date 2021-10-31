@@ -161,17 +161,20 @@ void update_weather_view(View& view, bool data_updated) {
 
     view.wind = left_pad(String(weather_request.hourly[0].wind_bft), 2);
     view.wind_deg = weather_request.hourly[0].wind_deg;
-    view.wind_unit = "Bft";
-
-    view.percip_time_unit = "hour";
-    view.percip_unit = "mm";
-    view.percic_pop_unit = "%";
 
     for (int i = 0; i < PERCIP_SIZE; i++) {
-        view.percip[i] = fmt_2f1(weather_request.rain[i].snow + weather_request.rain[i].rain);
         view.percip_time[i] = ts2H(weather_request.rain[i].date_ts + datetime_request.response.gmt_offset);
         view.percip_icon[i] = String(icon2meteo_font(weather_request.rain[i].icon));
-        view.percic_pop[i] = left_pad(String(weather_request.rain[i].pop), 3);
+
+        float cumulative_percip = weather_request.rain[i].snow + weather_request.rain[i].rain;
+        if (cumulative_percip > 0) {
+            view.percic_pop[i] = left_pad(fmt_2f1(cumulative_percip), 4);
+        } else {
+            view.percic_pop[i] = left_pad(String(min(weather_request.rain[i].pop, 99)) + "%", 4);
+        }
+
+        // temp TODO rename from percip
+        view.percip[i] = fmt_2f1(weather_request.rain[i].feel_t);
     }
 }
 
@@ -227,6 +230,7 @@ void update_percip_forecast(WeatherResponseRainHourly& percip, JsonObject& root,
     percip.pop = round(root["hourly"][hour_offset]["pop"].as<float>() * 100);
     percip.snow = nested_value_or_default(root["hourly"][hour_offset], "snow", "1h", 0.0f);
     percip.rain = nested_value_or_default(root["hourly"][hour_offset], "rain", "1h", 0.0f);
+    percip.feel_t = kelv2cels1(root["hourly"][hour_offset]["feels_like"].as<float>());
     percip.icon = String(root["hourly"][hour_offset]["weather"][0]["icon"].as<char*>()).substring(0, 2);
 }
 

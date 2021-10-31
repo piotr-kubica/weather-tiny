@@ -212,6 +212,7 @@ struct WeatherResponseDaily {
 struct WeatherResponseRainHourly {
     int date_ts;
     int pop;
+    float feel_t;
     float snow;
     float rain;
     String icon;
@@ -221,15 +222,15 @@ struct WeatherResponseRainHourly {
         Serial.print("Rain: " + ts2date(date_ts));
         sprintf(
             buffer, 
-            "%8s %8s %8s %8s",
-            "pop", "snow", "rain", "icon"
+            "%8s %8s %8s %8s %8s",
+            "pop", "snow", "rain", "feel", "icon"
         );
         Serial.println(buffer);
-        Serial.printf("%20s", "");
+        Serial.printf("%25s", "");
         sprintf(
             buffer, 
-            "%8d %8.1f %8.1f %8s",
-            pop, snow, rain, icon
+            "%8d %8.1f %8.1f %8.1f %8s",
+            pop, snow, rain, feel_t, icon
         );
         Serial.println(buffer);
     }

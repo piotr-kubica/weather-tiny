@@ -13,5 +13,8 @@ int kelv2cels(float kelvin) {
     return round(kelvin -273.15);
 }
 
+float kelv2cels1(float kelvin) {
+    return round((kelvin -273.15)*10)/10.0;
+}
 
 #endif
