@@ -17,6 +17,14 @@ struct View {
     }
     
     String location = "Unknown";
+
+    String plant_status = "WET"; // or DRY
+    
+    String time_h = "00";  // hour
+    String time_m = "00";  // minute
+    String date_d = "--";  // day
+    String date_w = "--";  // weekdate
+    String date_m = "--";  // month
     String datetime = "00:00  --- 00/00";
     unsigned int battery_percent = 0;
     String battery_percent_display = "---";
@@ -49,6 +57,19 @@ struct View {
     String percip[PERCIP_SIZE];
     String percic_pop[PERCIP_SIZE];
 } ;
+
+
+String openweather_icons[9] = {
+    "01",   // 0 clear sky
+    "02",   // 1 few clouds    
+    "03",   // 2 scattered clouds
+    "04",   // 3 broken clouds
+    "09",   // 4 shower rain
+    "10",   // 5 rain
+    "11",   // 6 thunderstorm
+    "13",   // 7 snow
+    "50"    // 8 mist
+};
 
 
 char meteo_font[1+9] = {

@@ -265,17 +265,4 @@ struct WeatherRequest: Request {
 } ;
 
 
-String openweather_icons[9] = {
-    "01",   // 0 clear sky
-    "02",   // 1 few clouds    
-    "03",   // 2 scattered clouds
-    "04",   // 3 broken clouds
-    "09",   // 4 shower rain
-    "10",   // 5 rain
-    "11",   // 6 thunderstorm
-    "13",   // 7 snow
-    "50"    // 8 mist
-};
-
-
 #endif

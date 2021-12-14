@@ -4,6 +4,7 @@
 
 #include <time.h>
 #include "i18n.h"
+#include "view.h"
 
 
 String capitalize(String str) {
@@ -58,6 +59,24 @@ String header_datetime(time_t* dt, bool updated) {
     }
 }
 
+void update_view_datetime_header(View& view, time_t* dt, bool updated) {
+    struct tm *t = localtime(dt);
+    
+    //date
+    char w[2+1], d[2+1], m[2+1], h[2+1], _m[2+1];
+    sprintf(w, "%s", get_weekday(t->tm_wday));
+    view.date_w = String(w);
+    sprintf(d, "%02u", t->tm_mday);
+    view.date_d = String(d);
+    sprintf(m, "%02u", t->tm_mon+1);
+    view.date_m = String(m);
+
+    // time
+    sprintf(h, "%02u", t->tm_hour);
+    view.time_h = String(h);
+    sprintf(_m, "%02u", t->tm_min);
+    view.time_m = String(_m);
+}
 
 String ts2weekday(int timestamp) {
     time_t tm = timestamp;

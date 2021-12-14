@@ -120,7 +120,7 @@ T nested_value_or_default(JsonObject parent_jobj, String key, String nested_key,
 
 
 void update_header_view(View& view, bool data_updated) {
-    view.location = location[curr_loc].name.substring(0,7);
+    view.location = location[curr_loc].name.substring(0,12);
     view.battery_percent = get_battery_percent(analogRead(ADC_PIN));
     int percent_display = view.battery_percent;
     
@@ -128,7 +128,8 @@ void update_header_view(View& view, bool data_updated) {
         percent_display = 100;
     }
     view.battery_percent_display = String(percent_display) + "%";
-    view.datetime = header_datetime(&datetime_request.response.dt, data_updated);
+    update_view_datetime_header(view, &datetime_request.response.dt, data_updated);
+    //view.datetime = header_datetime(&datetime_request.response.dt, data_updated);
 }
 
 

@@ -4,6 +4,34 @@
 #include <GxEPD.h>
 #include "view.h"
 
+#include <pgmspace.h>
+
+// 16x22 (Boot)
+const unsigned char plant_img[352] PROGMEM = { 
+  0x01, 0x80, 
+  0x03, 0xc0, 
+  0x03, 0xc0, 
+  0xf6, 0x6f, 
+  0xfe, 0x7f, 
+  0xce, 0x73, 
+  0xc6, 0x63, 
+  0x66, 0x66, 
+  0x77, 0x6e, 
+  0x7f, 0xfe, 
+  0x7f, 0xfe, 
+  0x60, 0x06, 
+  0x20, 0x04, 
+  0x30, 0x04, 
+  0x30, 0x0c, 
+  0x30, 0x0c, 
+  0x30, 0x0c, 
+  0x30, 0x0c, 
+  0x30, 0x08, 
+  0x18, 0x18, 
+  0x18, 0x18, 
+  0x1f, 0xf8, 
+};
+
 
 struct WindArrow {
     int x = 0, y = 0;
@@ -170,11 +198,24 @@ void display_validating_mode() {
 void display_header(View& view) {
     display.setFont(&monofonto10pt7b);
     print_text(0, -3, view.location);
-    print_text(SCREEN_WIDTH - get_text_width(view.datetime)-3, -12, view.datetime);
-    int batt_x = SCREEN_WIDTH - get_text_width(view.datetime) - 33;
+    
+    int batt_x = 222; // SCREEN_WIDTH - get_text_width(view.datetime) - 33;
     display_battery_icon(batt_x, 3, display, view.battery_percent);
     // display_battery_percentage
     // print_text(batt_x, 3, view.battery_percent_display);  
+
+    display.setFont(&Cousine_Regular6pt7b);
+    print_text(178, -3, view.date_d);
+    print_text(178, 8, view.date_w);
+    
+    print_text(200, -3, view.time_h);
+    print_text(200, 8, view.time_m);
+
+    // plant
+    // display.drawRect(x, y, radius, GxEPD_BLACK);
+    display.drawBitmap(plant_img, 120, -3, 16, 22, GxEPD_BLACK);
+    display.setFont(&monofonto10pt7b);
+    print_text(143, -3, view.plant_status);
 }
 
 
