@@ -1,3 +1,5 @@
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/bc1qt2sd4ys4q3dh8jk9s72rgcpy8855ydzjx323dd)](https://en.cryptobadges.io/donate/bc1qt2sd4ys4q3dh8jk9s72rgcpy8855ydzjx323dd)
+
 # Tiny weather station based on TTGO T5 V2.3.1 (ESP32 with 2.13" e-ink display)
 
 [<img src="/images/esp-weather-station.jpg" width="440"/>](/images/esp-weather-station.jpg) [<img src="/images/weather_mini.jpg" width="350"/>](/images/weather_mini.jpg) 
@@ -110,7 +112,7 @@ See the example output from [serial monitor](monitor_log.txt) for a successful d
 ### Support
 
 If you have found this project useful you can buy me a cup of coffee 
-[<img src="/images/cup-of-coffee-small.png">](https://www.paypal.com/donate?hosted_button_id=GAZSZ5CMHDRZS)
 
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/big/bc1qt2sd4ys4q3dh8jk9s72rgcpy8855ydzjx323dd)](https://en.cryptobadges.io/donate/bc1qt2sd4ys4q3dh8jk9s72rgcpy8855ydzjx323dd)
 
 
