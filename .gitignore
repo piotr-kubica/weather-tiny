@@ -50,3 +50,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+api_keys.h
+weather_tiny/api_keys.h
