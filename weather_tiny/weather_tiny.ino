@@ -237,7 +237,7 @@ void update_percip_forecast(WeatherResponseRainHourly& percip, JsonObject& root,
 
 
 bool location_handler(WiFiClient& resp_stream, Request request) {
-    const int json_size = 20 * 1024;
+    const int json_size = 18 * 1024;
     DynamicJsonDocument doc = deserialize(resp_stream, json_size, true);
     JsonObject api_resp = doc.as<JsonObject>();
 
@@ -254,7 +254,7 @@ bool location_handler(WiFiClient& resp_stream, Request request) {
 
 
 bool datetime_handler(WiFiClient& resp_stream, Request request) {
-    const int json_size = 10 * 1024;
+    const int json_size = 8 * 1024;
     DynamicJsonDocument doc = deserialize(resp_stream, json_size, true);
     JsonObject api_resp = doc.as<JsonObject>();
 
@@ -374,7 +374,7 @@ bool http_request_data(WiFiClient& client, Request request, unsigned int retry=3
 
     while(!ret_val && retry--) {
         ret_val = true;
-        client.stop();
+        // client.stop();
         HTTPClient http;
         Serial.printf("\nHTTP connecting to %s%s [retry left: %s]", request.server.c_str(), request.path.c_str(), String(retry).c_str());
         http.begin(client, request.server, 80, request.path);
@@ -389,7 +389,7 @@ bool http_request_data(WiFiClient& client, Request request, unsigned int retry=3
             Serial.printf("\nHTTP connection failed %s, error: %s \n\n", String(http_code).c_str(), http.errorToString(http_code).c_str());
             ret_val = false;
         }
-        client.stop();
+        // client.stop();
         http.end();
     }
     return ret_val;
@@ -837,7 +837,37 @@ void run_operating_mode() {
         bool is_weather_fetched = http_request_data(client, weather_request);
         bool is_aq_fetched = http_request_data(client, airquality_request);
 
+
         view = View();
+        
+
+        // TODO move to api requests, handler as other requests
+        Serial.println("[Plant status] request plant status");
+        HTTPClient http;
+        http.begin(client, "http://endpoint/");
+        http.setAuthorization("user", "pass"); 
+        http.addHeader("Content-Type", "application/json");
+        int httpCode = http.GET();
+        String response = http.getString();
+        Serial.println(String("[Plant status] response code: ") + String(httpCode));
+        // deserialize
+        DynamicJsonDocument doc(1024);
+        DeserializationError error = deserializeJson(doc, response);
+        if (error) {
+            Serial.print("[Plant status] deserializeJson() failed: ");
+            Serial.println(error.c_str());
+            view.plant_status = "N/A";
+        } else {
+            String status = String(doc["status"].as<char*>()); // "watered"
+            Serial.println("[Plant status] fetched: " + status);
+            if (status.equals("watered")) { 
+                view.plant_status = "WET";
+            } else {
+                view.plant_status = "DRY";
+            }
+        }
+        http.end();
+        client.stop(); 
 
         update_header_view(view, is_time_fetched); 
         update_weather_view(view, is_weather_fetched);

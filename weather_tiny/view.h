@@ -18,7 +18,7 @@ struct View {
     
     String location = "Unknown";
 
-    String plant_status = "WET"; // or DRY
+    String plant_status = "N/A"; // or DRY
     
     String time_h = "00";  // hour
     String time_m = "00";  // minute

@@ -265,4 +265,23 @@ struct WeatherRequest: Request {
 } ;
 
 
+// TODO plant status request
+/*
+
+http://piotrekk8.pythonanywhere.com/plants/latest_avg_hum_volt/
+
+GET /plants/latest_avg_hum_volt/
+HTTP 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "hum": 715.2,
+    "status": "watered"
+}
+
+// */
+
+
 #endif
