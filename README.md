@@ -28,6 +28,7 @@ The GNU GPL is the most widely used free software license and has a strong copyl
 Turn on device. 
 Reset to enable configuration.
 Connect to `weather-wifi` device access point.
+Go to 192.168.4.1/config if not redirected.
 Provide wireless lan ssid and password.
 Provide locations for which information should be fetched.
 Submit config form.
