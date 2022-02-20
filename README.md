@@ -1,5 +1,6 @@
 [![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/bc1qt2sd4ys4q3dh8jk9s72rgcpy8855ydzjx323dd)](https://en.cryptobadges.io/donate/bc1qt2sd4ys4q3dh8jk9s72rgcpy8855ydzjx323dd)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VEJ9YA2MMH9SA)
+<a href='https://ko-fi.com/O5O8AOOS7' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 # Tiny weather station based on TTGO T5 V2.3.1 (ESP32 with 2.13" e-ink display)
 
