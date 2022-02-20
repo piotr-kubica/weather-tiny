@@ -113,6 +113,10 @@ Verify and upload the weather_mini.ino sketch.
 After successful upload turn on the device and configure it as shown in [device configuration](#device-configuration) section.
 See the example output from [serial monitor](monitor_log.txt) for a successful device configuration.
 
+### Issues
+NOTE: There is currently an issue with display.print, display.println, display.write function which causes the device to reset itself in a loop.
+https://github.com/Xinyuan-LilyGO/LilyGO-T-Echo/issues/7
+
 ### Support
 
 If you have found this project useful you can buy me a cup of coffee 
