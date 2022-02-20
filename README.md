@@ -117,6 +117,9 @@ See the example output from [serial monitor](monitor_log.txt) for a successful d
 NOTE: There is currently an issue with `display.print`, `display.println`, `display.write` functions which causes the device to reset itself in a loop.
 https://github.com/Xinyuan-LilyGO/LilyGO-T-Echo/issues/7
 
+Current workaround is to replace these function calls with custom function which prints characters in sequence.
+See: https://gist.github.com/piotr-kubica/8c55b481581e60073a36c04ded483f0a
+
 ### Support
 
 If you have found this project useful you can buy me a cup of coffee 
