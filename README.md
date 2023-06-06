@@ -1,4 +1,4 @@
-[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/bc1qt2sd4ys4q3dh8jk9s72rgcpy8855ydzjx323dd)](https://en.cryptobadges.io/donate/bc1qt2sd4ys4q3dh8jk9s72rgcpy8855ydzjx323dd)
+![BTC](bc1qt2sd4ys4q3dh8jk9s72rgcpy8855ydzjx323dd)  
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VEJ9YA2MMH9SA)
 
 # Tiny weather station based on TTGO T5 V2.3.1 (ESP32 with 2.13" e-ink display)
@@ -7,6 +7,10 @@
 
 ### This project is licensed under GNU General Public License v2.0
 The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GNU GPL, each with different requirements.
+
+### 🔸NOTE🔸
+Second version of the firmware is currently being developed.
+The goals include: enhanced performance, increased (4+ weeks) battery life, easier configurability, integration with external systems.
 
 ### Features
 
